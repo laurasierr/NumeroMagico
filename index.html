@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Número Mágico</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+<body style="background-color: #e0dfdf;">
+    <br>
+    <h3 style="text-align: center;">Adivina el numero secreto</h3>
+    <br>
+    <p style=" font-family: 'Times New Roman', Times, serif; font-size: large; text-align: center;">Se ha generado un número aleatorio, ¿Puedes adivinarlo?</p>
+    <p style=" font-family: 'Times New Roman', Times, serif; font-size: large; text-align: center;">Sólo tienes 10 intentos para adivinar, ¡Aprovéchalos bien!</p>
+        <div class="container-fluid text-center">
+            <div class="row justify-content-sm-center" style="margin-top: 3%;">
+                <div class="col-sm-auto">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body">
+                          <h5 class="card-title" style=" font-family: 'Times New Roman', Times, serif; font-size: large; text-align: center;">Ingresa un número para adivinar el número mágico </h5>
+                            <div class="form">
+                                <label for="RespuestaUsuario" class="letra fs-3" style=" font-family: 'Times New Roman', Times, serif; font-size: large; text-align: center;">Adivina el número</label><input type="number" onkeyup="onKeyUp(event)" id="RespuestaUsuario" class="RespuestaUsuario letra fs-5">
+                                <input type="button" style="color: #fff; background-color: #6c757d; border-color: #6c757d; display: inline-block; font-weight: 400; line-height: 1.5; text-align: center; text-decoration: none; border: 1px solid transparent; padding: .375rem .75rem; border-radius: .25rem;" value="validar" class="validar btn-secundary">
+                                <input type="button" style="color: #fff; background-color: #6c757d; border-color: #6c757d; display: inline-block; font-weight: 400; line-height: 1.5; text-align: center; text-decoration: none; border: 1px solid transparent; padding: .375rem .75rem; border-radius: .25rem;" value="Reiniciar Juego" class="reiniciar btn-secundary"onclick="location.reload()"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="text" class="letra fs-4 text">
+            <p class="Resultado text"></p>
+            <p class="Intentos text"></p>
+            <p class="IntentosAnteriores"></p>
+            <p class="pistas text"></p>
+        </div>
+        <div id="reloj" style="width: 200px; height: 30px; 
+            font: bold 1.5em dotum, lucida sans, arial; text-align: center;
+            float: left;">
+            00 : 00 : 00
+        </div>
+</body>
+<script src="js/js.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<footer class="page-footer font-small" style="background-color: #202427; color: white; margin-top: 2%; position: absolute; width: 100%; bottom: 0;">
+    <div class="footer-copyright text-center py-3">Realizado por: Laura Sierra García - 2017114107 
+    </div>
+</footer>
+</html>
